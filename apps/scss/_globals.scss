@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap');
+
+// :root {
+//     --darkViolet: hsl($darkViolet);
+//    --grayishBlue: hsl($grayishBlue);
+//    --veryDarkViolet: hsl($veryDarkViolet);
+//    --darkGrayishViolet: ($darkGrayishViolet);
+//     --veryLightGray:  ($veryLightGray);
+// }
+
+
+*,*::after,*::before{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    width: 100%;
+    min-height: 100vh;
+    height: 100%;
+    font-size: $normalFont;
+    color: var(--grayishBlue);
+    font-family: $karla;
+}
+
+
+ul {
+    list-style-type: none;
+}
+
+img {
+    max-width: 100%;
+}
+
+
+h1,h2,h3,h4 {
+    margin-top: 0px;
+}
+
+//Texts
+
+// p {
+//     line-height: 1.5;
+// }
+
+a,a:visited,a:hover {
+    text-decoration: none;
+}
+
+.container {
+    width: 71.25rem;
+    margin: 0 auto;
+
+    @include breakpoint-down(large){
+        width: 100%;
+    }
+
+    @include breakpoint-down(medium){
+        width: 100%;
+    }
+
+    @include breakpoint-down(small){
+        width: 100%;
+    }
+}
+
+.flex {
+    display: flex;
+
+    &-jc-sb {
+        justify-content: space-between;
+    }
+    &-jc-c {
+        justify-content: center;
+    }
+    &-ai-c {
+        align-items: center;
+
+    }
+
+    &-col {
+        flex-direction: column;
+
+    }
+
+}
+
+.hide-for-desktop {
+    @include breakpoint-up(medium){
+        display: none;
+    }
+}
+
+.hide-for-mobile {
+    @include breakpoint-down(small){
+        display: none;
+    }
+}
