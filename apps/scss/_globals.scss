@@ -37,13 +37,14 @@ img {
 
 h1,h2,h3,h4 {
     margin-top: 0px;
+    font-family: $serifDisplay;
 }
 
 //Texts
 
-// p {
-//     line-height: 1.5;
-// }
+p {
+    line-height: 1.5;
+}
 
 a,a:visited,a:hover {
     text-decoration: none;
@@ -55,6 +56,7 @@ a,a:visited,a:hover {
 
     @include breakpoint-down(large){
         width: 100%;
+        padding-inline: 1.25rem;
     }
 
     @include breakpoint-down(medium){
@@ -80,9 +82,38 @@ a,a:visited,a:hover {
 
     }
 
+    &-mob {
+        @include breakpoint-down(small){
+            flex-direction: column;
+        }
+    }
+
     &-col {
         flex-direction: column;
+    }
 
+    &-mob-col {
+        @include breakpoint-down(small){
+            flex-direction: column-reverse;
+        }
+    }
+
+    &-mob-c {
+        justify-content: center;
+        align-items: center;
+        @include breakpoint-down(small){
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto;
+        }
+    }
+
+    &-mob-grid {
+        flex-direction: column;
+        @include breakpoint-down(small){
+            justify-content: center;
+            align-items: center;
+        }
     }
 
 }
@@ -97,4 +128,51 @@ a,a:visited,a:hover {
     @include breakpoint-down(small){
         display: none;
     }
+}
+
+//Hamburger Menu
+.burger {
+
+    > span:first-child{
+        transform: rotate(45deg);
+    }
+    
+    > span:nth-child(2){
+        opacity: 0;
+    }
+    
+    > span:last-child{
+        transform: rotate(-45deg);
+    }
+
+}
+
+.hide {
+    display: none;
+}
+
+.active {
+    display: block;
+}
+
+.noscroll {
+    overflow: hidden;
+}
+
+.width {
+    width: 47%;
+
+    @include breakpoint-down(small){
+        width: 100%;
+    }
+}
+
+.btn {
+    border: 2px solid $darkGrayishViolet;
+    height: 2.875rem;
+    text-align: center;
+    width: 9.25rem;
+    color: $veryLightGray;
+    text-transform: uppercase;
+    transition: all 300ms ease-in-out;
 }

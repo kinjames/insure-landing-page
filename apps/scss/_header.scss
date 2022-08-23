@@ -1,21 +1,21 @@
 header {
     width: 100%;
+    margin-bottom: 16.5rem;
+    
+    @include breakpoint-down(small){
+        margin-bottom: 3.75rem;
+    }
     
     nav {
         background-color: var($veryLightGray);
         height: 5.125rem;
-        border: 2px solid red;
 
         .nav-bar {
             height: 100%;
 
-            @include breakpoint-down(medium){
-                padding-inline: 1.25rem;
-            }
 
             .logo {
-                width: 130px;
-                border: 2px solid yellow;
+                width: 8.125rem;
 
                 @include breakpoint-down(medium){
                     width: 20%;
@@ -56,10 +56,10 @@ header {
                 .nav-items {
 
                     .nav-link {
-                        border: 2px solid green;
                         text-transform: uppercase;
                         color: $darkGrayishViolet;
                         padding: .5rem;
+                        transition: all 300ms ease-in-out;
 
                         &:hover {
                             color: var(--darkViolet);
@@ -75,6 +75,132 @@ header {
 
                     
                 }
+            }
+        }
+    }
+
+    .mobile-menu {
+        height: 100vh;
+        background-color: $veryDarkViolet;
+        transition: all 300ms ease-in-out;
+        text-align: center;
+        padding-inline: 1.125rem;
+        padding-top: 2.75rem;
+        gap: 2.125rem;
+
+
+        a {
+            font-size: 1rem;
+            color: $veryLightGray;
+            text-transform: uppercase;
+            width: 100%;
+
+        }
+
+        .last-man {
+            padding: 1rem;
+            border: 2px solid $veryLightGray;
+        }
+    }
+
+    section {
+        background: $darkViolet;
+        height: 37.55rem;
+        padding-top: 6.25rem;
+
+        @include breakpoint-down(small){
+            padding-top: 0;
+            height: 100%;
+            padding-bottom: 6.25rem;
+        }
+
+        .hero {
+            gap: 1rem;
+            position: relative;
+
+            @include breakpoint-down(small){
+                padding-inline: 0;
+                gap: 3rem;
+            }
+
+            .text-container {
+                height: 100%;
+                gap: 3.9rem;
+                color: $veryLightGray;
+
+                @include breakpoint-down(small){
+                    padding-inline: 1.25rem;
+                }
+                .line {
+                    width: 9.375rem;
+                    height: .125rem;
+                    background-color: $darkGrayishViolet;
+                }
+
+                .texts {
+                    @include breakpoint-down(small){
+                        text-align: center;
+                    }
+                    h1 {
+                        font-family: $serifDisplay;
+                        font-size: 4rem;
+                        line-height: 3.75rem;
+                        letter-spacing: 3px;
+                        margin-bottom: 2rem;
+
+                        @include breakpoint-down(medium){
+                            font-size: 3.2rem;
+                            letter-spacing: 0;
+                        }
+
+                        @include breakpoint-down(small){
+                            font-size: 2.5rem;
+                            line-height: 2.5rem;
+                            letter-spacing: 1px;
+                        }
+                    }
+
+                    .hero-para {
+                        color: $darkGrayishViolet;
+                        margin-bottom: 2.3rem;
+
+                    }
+
+                    .cta {
+                        width: 9.25rem;
+                        
+
+                        &:hover {
+                            background-color: $veryLightGray;
+                            color: $veryDarkViolet;
+                        }
+                    }
+                }
+            }
+
+            .image-container {
+
+                img {
+                    width: 100%;
+                    height: 100%;
+                }
+
+                @include breakpoint-down(large){
+                    position: absolute;
+                    left: 52%;
+                    height: 150%;
+                }
+
+                @include breakpoint-down(medium){
+                    position: absolute;
+                    left: 50%;
+                    height: 120%;
+                }
+
+                @include breakpoint-down(small){
+                    position: unset;
+                }
+
             }
         }
     }

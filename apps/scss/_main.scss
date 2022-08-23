@@ -1,0 +1,88 @@
+main {
+
+    .feature-section {
+
+        margin-bottom: 6.875rem;
+
+        .line {
+            width: 9.375rem;
+            height: 1px;
+            background-color: $grayishBlue;
+            margin-bottom: 2.5rem;
+        }
+
+        h2 {
+            font-size: 3rem;
+            color: $veryDarkViolet;
+            margin-bottom: 3.5rem;
+
+            @include breakpoint-down(medium){
+                font-size: 2rem;
+            }
+        }
+        .features-container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: 1fr;
+            grid-column-gap: 30px;
+            grid-row-gap: 0px;
+
+            @include breakpoint-down(small){
+                display: grid;
+                grid-template-columns: 1fr;
+                justify-items: center;
+                align-items: center;
+                text-align: center;
+                grid-template-rows: repeat(3, 1fr);
+                grid-row-gap: 30px;
+            }
+
+            .features {
+                .feature-icon {
+                    width: 25%;
+                    margin-bottom: 1.25rem;
+
+                    @include breakpoint-down(small){
+                        margin: 0 auto 1.25rem auto;
+                    }
+
+                    img {
+                        width: 100%;
+                    }
+                }
+
+                h4 {
+                    font-size: 1.25rem;
+                    margin-bottom: 1rem;
+                    color: $veryDarkViolet;
+                }
+
+                .feature-para {
+                    color: $grayishBlue;
+                }
+            }
+        }
+    }
+
+    .about {
+        padding: 4.125rem 3.875rem;
+        background-color: $darkViolet;
+        margin-bottom: 6.875rem;
+
+        h2 {
+            color: $veryLightGray;
+            font-size: 2.5rem;
+            letter-spacing: 2px;
+            width: 40%;
+
+            @include breakpoint-down(small){
+                width: 100%;
+                text-align: center;
+                font-size: 2rem;
+                margin-bottom: 1.5rem;
+            }
+        }
+    }
+
+
+}

@@ -4,9 +4,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <link rel="stylesheet" href="./apps/scss/style.css">
-
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <link rel="stylesheet" href="./apps/scss/style.css">
 
 
   
@@ -57,10 +58,91 @@
       </div>
 
     </nav>
+    <div class="mobile-menu hide-for-desktop flex flex-col flex-ai-c hide">
+      <a href="#">How we work</a>
+      <a href="#">Blog</a>
+      <a href="#">Account</a>
+      <a href="#" class="last-man">View plans</a>
+    </div>
 
+    <section>
+      <div class="container hero flex flex-jc-sb flex-mob-col">
+        <div class="text-container width flex flex-col">
+          <div class="line hide-for-mobile"></div>
+          <div class="texts">
+            <h1>
+              Humanizing your insurance.
+            </h1>
+            <p class="hero-para">
+              Get your life insurance coverage easier and faster. We blend our expertise 
+              and technology to help you find the plan that’s right for you. Ensure you 
+              and your loved ones are protected.
+            </p>
+            <a href="#" class="cta btn flex flex-mob-c">
+              View plans
+            </a>
+          </div>
+        </div>
+        <div class="image-container width">
+          <img src="images/image-intro-desktop.jpg" alt="Hero image" class="hide-for-mobile">
+          <img src="images/image-intro-mobile.jpg" alt="Hero image" class="hide-for-desktop">
+        </div>
+      </div>
+    </section>
   </header>
   <main>
-
+    <div class="container feature-section flex flex-mob-grid">
+      <div class="line"></div>
+      <h2>
+        We’re different
+      </h2>
+      <div class="features-container">
+        <div class="features">
+          <div class="feature-icon">
+            <img src="images/icon-snappy-process.svg" alt="Snappy Process">
+          </div>
+          <h4 class="feature-header">
+            Snappy Process
+          </h4>
+          <p class="feature-para">
+            Our application process can be completed in minutes, not hours. Don’t get 
+            stuck filling in tedious forms.
+          </p>
+        </div>
+        <div class="features">
+          <div class="feature-icon">
+            <img src="images/icon-affordable-prices.svg" alt="Affordable Prices">
+          </div>
+          <h4 class="feature-header">
+            Affordable Prices
+          </h4>
+          <p class="feature-para">
+            We don’t want you worrying about high monthly costs. Our prices may be low, 
+            but we still offer the best coverage possible.
+          </p>
+        </div>
+        <div class="features">
+          <div class="feature-icon">
+            <img src="images/icon-people-first.svg" alt="People First">
+          </div>
+          <h4 class="feature-header">
+            People First
+          </h4>
+          <p class="feature-para">
+            Our plans aren’t full of conditions and clauses to prevent payouts. We make 
+            sure you’re covered when you need it.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="container about flex flex-jc-sb flex-ai-c flex-mob">
+      <h2>
+        Find out more about how we work
+      </h2>
+      <div class="btn flex flex-mob-c">
+        How we work
+      </div>
+    </div>
   </main>
 
   <!-- 
@@ -125,10 +207,138 @@
 
   
     <footer>
+
+      <div class="container">
+
+        <div class="logo-socials flex flex-jc-sb flex-ai-c flex-mob">
+          <div class="footer-logo">
+            <img src="images/logo.svg" alt="Logo">
+          </div>
+          <div class="socials flex">
+            <a href="#">
+              <i class="fab fa-facebook-square"></i>
+            </a>
+            <a href="#">
+              <i class="fab fa-twitter"></i>
+            </a>
+            <a href="#">
+              <i class="fab fa-pinterest"></i>
+            </a>
+            <a href="#">
+              <i class="fab fa-instagram"></i>
+            </a>
+          </div>
+        </div>
+        <div class="line"></div>
+
+        <div class="footer-links flex flex-ai-c flex-jc-sb flex-mob">
+          <div class="section">
+            <p>
+              Our company
+            </p>
+            <ul class="flex flex-col">
+              <li>
+                <a href="#">
+                  How we work
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  Why Insure?
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  View plans
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  Reviews
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="section">
+            <p>
+              Help me
+            </p>
+            <ul class="flex flex-col">
+              <li>
+                <a href="#">
+                  FAQ
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  Terms of use
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  Privacy policy
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  Cookies
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="section">
+            <p>
+              contact
+            </p>
+            <ul class="flex flex-col">
+              <li>
+                <a href="#">
+                  sales
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  support
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  live chat
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="section">
+            <p>
+              Others
+            </p>
+            <ul class="flex flex-col">
+              <li>
+                <a href="#">
+                  careers
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  Press
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  Licenses
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
       <div class="attribution">
         Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-        Coded by <a href="#">Your Name Here</a>.
+        Coded by <a href="https://github.com/kinjames">James Kofi Myers</a>.
       </div>
     </footer>
+
+    <script src="apps/js/script.js"></script>
 </body>
 </html>

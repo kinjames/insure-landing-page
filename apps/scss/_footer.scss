@@ -1,0 +1,86 @@
+footer {
+    background: $veryLightGray;
+    padding: 60px 0;
+
+    .logo-socials {
+
+        margin-bottom: 1.5rem;
+        @include breakpoint-down(small){
+            gap: 1.5rem;
+        }
+
+        .footer-logo {
+            width: 10%;
+            @include breakpoint-down(small){
+                width: 40%;
+            }
+            img {
+                width: 100%;
+            }
+        }
+
+        .socials {
+            gap: 1rem;
+            a {
+                font-size: 1.25rem;
+
+                i{
+                    color: $darkGrayishViolet;
+                    transition: all 300ms ease-in-out;
+
+                    &:hover {
+                        color: $veryDarkViolet;
+                    }
+                }
+
+                
+            }
+        }
+    }
+
+    .line {
+        height: 1px;
+        width: 100%;
+        background: $darkGrayishViolet;
+        margin-bottom: 1.5rem;
+    }
+
+    .footer-links {
+
+        margin-bottom: 2rem;
+
+        @include breakpoint-up(medium){
+            gap: 10rem;
+        }
+
+        @include breakpoint-down(small){
+            gap: 1.1rem;
+        }
+        .section {
+            @include breakpoint-down(small){
+                text-align: center;
+            }
+
+            p {
+                color: $darkGrayishViolet;
+                margin-bottom: 1.1rem;
+                text-transform: uppercase;
+            }
+
+            ul {
+                gap: .4rem;
+                li {
+                    a {
+                        text-transform: uppercase;
+                        color: $darkViolet;
+                        transition: all 300ms ease-in-out;
+
+                        &:hover {
+                            text-decoration: underline;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
