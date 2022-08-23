@@ -5,6 +5,7 @@ header {
     @include breakpoint-down(small){
         margin-bottom: 3.75rem;
     }
+
     
     nav {
         background-color: var($veryLightGray);
@@ -103,11 +104,50 @@ header {
             border: 2px solid $veryLightGray;
         }
     }
+    
 
     section {
         background: $darkViolet;
         height: 37.55rem;
         padding-top: 6.25rem;
+        
+        &::before {
+            content: ""; 
+            position: absolute;
+            bottom: 10%;
+            left: 73%;
+            width: 27%;
+            height: 80%;
+            background-image: url(/images/bg-pattern-intro-right-desktop.svg);
+            background-repeat: no-repeat;
+            z-index: 20;
+
+            @include breakpoint-down(small){
+                background-image: url(/images/bg-pattern-intro-right-mobile.svg);
+                height: 42%;
+                top: 248%;
+                bottom: 0;
+                width: 50%;
+                left: 50%;
+                border: 2px solid red;
+            }
+        }
+
+        &::after {
+            content: ""; 
+            position: absolute;
+            bottom: -40%;
+            left: 0;
+            width: 27%;
+            height: 80%;
+            background-image: url(/images/bg-pattern-intro-left-desktop.svg);
+            background-repeat: no-repeat;
+
+            @include breakpoint-down(small){
+                background-image: url(/images/bg-pattern-intro-left-mobile.svg);
+                background-repeat: no-repeat;
+            }
+        }
 
         @include breakpoint-down(small){
             padding-top: 0;

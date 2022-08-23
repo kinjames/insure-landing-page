@@ -161,6 +161,11 @@ a, a:visited, a:hover {
   color: hsl(270deg, 9%, 17%);
 }
 
+.last {
+  z-index: 5;
+  border: 1px solid hsl(0deg, 0%, 98%);
+}
+
 header {
   width: 100%;
   margin-bottom: 16.5rem;
@@ -250,6 +255,44 @@ header section {
   background: hsl(256deg, 26%, 20%);
   height: 37.55rem;
   padding-top: 6.25rem;
+}
+header section::before {
+  content: "";
+  position: absolute;
+  bottom: 10%;
+  left: 73%;
+  width: 27%;
+  height: 80%;
+  background-image: url(/images/bg-pattern-intro-right-desktop.svg);
+  background-repeat: no-repeat;
+  z-index: 20;
+}
+@media (max-width: 39.9375em) {
+  header section::before {
+    background-image: url(/images/bg-pattern-intro-right-mobile.svg);
+    height: 42%;
+    top: 248%;
+    bottom: 0;
+    width: 50%;
+    left: 50%;
+    border: 2px solid red;
+  }
+}
+header section::after {
+  content: "";
+  position: absolute;
+  bottom: -40%;
+  left: 0;
+  width: 27%;
+  height: 80%;
+  background-image: url(/images/bg-pattern-intro-left-desktop.svg);
+  background-repeat: no-repeat;
+}
+@media (max-width: 39.9375em) {
+  header section::after {
+    background-image: url(/images/bg-pattern-intro-left-mobile.svg);
+    background-repeat: no-repeat;
+  }
 }
 @media (max-width: 39.9375em) {
   header section {
@@ -393,7 +436,7 @@ main .feature-section .features-container .features .feature-icon img {
   width: 100%;
 }
 main .feature-section .features-container .features h4 {
-  font-size: 1.25rem;
+  font-size: 1.45rem;
   margin-bottom: 1rem;
   color: hsl(270deg, 9%, 17%);
 }
@@ -404,6 +447,26 @@ main .about {
   padding: 4.125rem 3.875rem;
   background-color: hsl(256deg, 26%, 20%);
   margin-bottom: 6.875rem;
+}
+main .about::before {
+  content: "";
+  position: absolute;
+  bottom: 100;
+  left: 58%;
+  width: 30%;
+  height: 30%;
+  background-image: url(/images/bg-pattern-how-we-work-desktop.svg);
+  background-repeat: no-repeat;
+}
+@media (max-width: 39.9375em) {
+  main .about::before {
+    background-image: url(/images/bg-pattern-how-we-work-mobile.svg);
+    height: 42%;
+    top: 248%;
+    bottom: 0;
+    width: 50%;
+    left: 50%;
+  }
 }
 main .about h2 {
   color: hsl(0deg, 0%, 98%);
@@ -424,7 +487,27 @@ footer {
   background: hsl(0deg, 0%, 98%);
   padding: 60px 0;
 }
+footer::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  top: 229%;
+  left: 0;
+  width: 30%;
+  height: 30%;
+  background-image: url(/images/bg-pattern-footer-desktop.svg);
+  background-repeat: no-repeat;
+}
+@media (max-width: 39.9375em) {
+  footer::before {
+    background-image: url(/images/bg-pattern-footer-mobile.svg);
+    background-repeat: no-repeat;
+    width: 100%;
+    top: 305%;
+  }
+}
 footer .logo-socials {
+  z-index: 5;
   margin-bottom: 1.5rem;
 }
 @media (max-width: 39.9375em) {
@@ -444,12 +527,15 @@ footer .logo-socials .footer-logo img {
   width: 100%;
 }
 footer .logo-socials .socials {
+  z-index: 100;
   gap: 1rem;
 }
 footer .logo-socials .socials a {
+  z-index: 100;
   font-size: 1.25rem;
 }
 footer .logo-socials .socials a i {
+  z-index: 100;
   color: hsl(273deg, 4%, 51%);
   transition: all 300ms ease-in-out;
 }
@@ -463,6 +549,7 @@ footer .line {
   margin-bottom: 1.5rem;
 }
 footer .footer-links {
+  z-index: 5;
   margin-bottom: 2rem;
 }
 @media (min-width: 40em) {
@@ -474,6 +561,9 @@ footer .footer-links {
   footer .footer-links {
     gap: 1.1rem;
   }
+}
+footer .footer-links .section {
+  z-index: 100;
 }
 @media (max-width: 39.9375em) {
   footer .footer-links .section {

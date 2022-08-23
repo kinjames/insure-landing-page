@@ -182,3 +182,8 @@ a,a:visited,a:hover {
         color: $veryDarkViolet;
     }
 }
+
+.last {
+    z-index: 5;
+    border: 1px solid $veryLightGray;
+}
