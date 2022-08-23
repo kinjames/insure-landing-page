@@ -263,13 +263,13 @@ header section::before {
   left: 73%;
   width: 27%;
   height: 80%;
-  background-image: url(/images/bg-pattern-intro-right-desktop.svg);
+  background-image: url(images/bg-pattern-intro-right-desktop.svg);
   background-repeat: no-repeat;
   z-index: 20;
 }
 @media (max-width: 39.9375em) {
   header section::before {
-    background-image: url(/images/bg-pattern-intro-right-mobile.svg);
+    background-image: url(images/bg-pattern-intro-right-mobile.svg);
     height: 42%;
     top: 248%;
     bottom: 0;
@@ -285,12 +285,12 @@ header section::after {
   left: 0;
   width: 27%;
   height: 80%;
-  background-image: url(/images/bg-pattern-intro-left-desktop.svg);
+  background-image: url(images/bg-pattern-intro-left-desktop.svg);
   background-repeat: no-repeat;
 }
 @media (max-width: 39.9375em) {
   header section::after {
-    background-image: url(/images/bg-pattern-intro-left-mobile.svg);
+    background-image: url(images/bg-pattern-intro-left-mobile.svg);
     background-repeat: no-repeat;
   }
 }
@@ -455,12 +455,12 @@ main .about::before {
   left: 58%;
   width: 30%;
   height: 30%;
-  background-image: url(/images/bg-pattern-how-we-work-desktop.svg);
+  background-image: url(images/bg-pattern-how-we-work-desktop.svg);
   background-repeat: no-repeat;
 }
 @media (max-width: 39.9375em) {
   main .about::before {
-    background-image: url(/images/bg-pattern-how-we-work-mobile.svg);
+    background-image: url(images/bg-pattern-how-we-work-mobile.svg);
     height: 42%;
     top: 248%;
     bottom: 0;
@@ -495,12 +495,12 @@ footer::before {
   left: 0;
   width: 30%;
   height: 30%;
-  background-image: url(/images/bg-pattern-footer-desktop.svg);
+  background-image: url(images/bg-pattern-footer-desktop.svg);
   background-repeat: no-repeat;
 }
 @media (max-width: 39.9375em) {
   footer::before {
-    background-image: url(/images/bg-pattern-footer-mobile.svg);
+    background-image: url(images/bg-pattern-footer-mobile.svg);
     background-repeat: no-repeat;
     width: 100%;
     top: 305%;
