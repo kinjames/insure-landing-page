@@ -32,7 +32,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Frontend Mentor](https://www.frontendmentor.io/solutions/manage-landing-page-ByF2inAJqe)
+- Solution URL: [Frontend Mentor](https://www.frontendmentor.io/solutions/insure-landing-page-Q5x2UHaqO6)
 - Live Site URL: [Github](https://kinjames.github.io/insure-landing-page/)
 
 ## My process

@@ -175,4 +175,10 @@ a,a:visited,a:hover {
     color: $veryLightGray;
     text-transform: uppercase;
     transition: all 300ms ease-in-out;
+    cursor: pointer;
+
+    &:hover {
+        background-color: $veryLightGray;
+        color: $veryDarkViolet;
+    }
 }
