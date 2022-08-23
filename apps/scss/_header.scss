@@ -67,6 +67,7 @@ header {
                     }
 
                     .different {
+                        border: 1px solid $veryDarkViolet;
                         &:hover {
                             background: $veryDarkViolet;
                             color: $veryLightGray;

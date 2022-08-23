@@ -215,6 +215,9 @@ header nav .nav-bar .nav-menu .nav-items .nav-link {
 header nav .nav-bar .nav-menu .nav-items .nav-link:hover {
   color: var(--darkViolet);
 }
+header nav .nav-bar .nav-menu .nav-items .different {
+  border: 1px solid hsl(270deg, 9%, 17%);
+}
 header nav .nav-bar .nav-menu .nav-items .different:hover {
   background: hsl(270deg, 9%, 17%);
   color: hsl(0deg, 0%, 98%);
