@@ -541,7 +541,7 @@ footer::before {
     background-image: url(../../images/bg-pattern-footer-mobile.svg);
     background-repeat: no-repeat;
     width: 100%;
-    top: 375%;
+    top: 388%;
   }
 }
 footer .logo-socials {
