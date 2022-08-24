@@ -279,7 +279,7 @@ header section::before {
   header section::before {
     background-image: url(../../images/bg-pattern-intro-right-mobile.svg);
     height: 42%;
-    top: 125%;
+    top: 120%;
     bottom: 0;
     width: 35%;
     left: 65%;
@@ -494,7 +494,7 @@ main .about::before {
   main .about::before {
     background-image: url(../../images/bg-pattern-how-we-work-mobile.svg);
     height: 42%;
-    top: 360%;
+    top: 330%;
     bottom: 0;
     width: 48%;
     left: 48%;
@@ -541,7 +541,7 @@ footer::before {
     background-image: url(../../images/bg-pattern-footer-mobile.svg);
     background-repeat: no-repeat;
     width: 100%;
-    top: 390%;
+    top: 360%;
   }
 }
 footer .logo-socials {
