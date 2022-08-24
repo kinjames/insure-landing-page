@@ -148,6 +148,7 @@ a, a:visited, a:hover {
 
 .btn {
   border: 2px solid hsl(273deg, 4%, 51%);
+  z-index: 30;
   height: 2.875rem;
   text-align: center;
   width: 9.25rem;
@@ -162,7 +163,7 @@ a, a:visited, a:hover {
 }
 
 .last {
-  z-index: 5;
+  z-index: 30;
   border: 1px solid hsl(0deg, 0%, 98%);
 }
 
@@ -263,13 +264,20 @@ header section::before {
   left: 73%;
   width: 27%;
   height: 80%;
-  background-image: url('images/bg-pattern-intro-right-desktop.svg');
+  background-image: url(../../images/bg-pattern-intro-right-desktop.svg);
   background-repeat: no-repeat;
   z-index: 20;
 }
+@media (max-width: 63.9375em) {
+  header section::before {
+    width: 37%;
+    left: 63%;
+    bottom: 13%;
+  }
+}
 @media (max-width: 39.9375em) {
   header section::before {
-    background-image: url("/images/bg-pattern-intro-right-mobile.svg");
+    background-image: url(../../images/bg-pattern-intro-right-mobile.svg);
     height: 42%;
     top: 105%;
     bottom: 0;
@@ -284,12 +292,17 @@ header section::after {
   left: 0;
   width: 27%;
   height: 80%;
-  background: url("/images/bg-pattern-intro-left-desktop.svg");
+  background: url(../../images/bg-pattern-intro-left-desktop.svg);
   background-repeat: no-repeat;
+}
+@media (max-width: 63.9375em) {
+  header section::after {
+    bottom: -25%;
+  }
 }
 @media (max-width: 39.9375em) {
   header section::after {
-    background-image: url("./images/bg-pattern-intro-left-mobile.svg");
+    background-image: url(../../images/bg-pattern-intro-left-mobile.svg);
     background-repeat: no-repeat;
     width: 100%;
     bottom: -6%;
@@ -466,12 +479,20 @@ main .about::before {
   left: 58%;
   width: 30%;
   height: 30%;
-  background-image: url("/images/bg-pattern-how-we-work-desktop.svg");
+  background-image: url(../../images/bg-pattern-how-we-work-desktop.svg);
   background-repeat: no-repeat;
+}
+@media (max-width: 63.9375em) {
+  main .about::before {
+    bottom: -62%;
+    left: 50%;
+    width: 50%;
+    height: 30%;
+  }
 }
 @media (max-width: 39.9375em) {
   main .about::before {
-    background-image: url("images/bg-pattern-how-we-work-mobile.svg");
+    background-image: url(../../images/bg-pattern-how-we-work-mobile.svg);
     height: 42%;
     top: 250%;
     bottom: 0;
@@ -502,16 +523,22 @@ footer::before {
   content: "";
   position: absolute;
   bottom: 0;
-  top: 229%;
+  top: 232%;
   left: 0;
   width: 30%;
   height: 30%;
-  background-image: url("images/bg-pattern-footer-desktop.svg");
+  background-image: url(../../images/bg-pattern-footer-desktop.svg);
   background-repeat: no-repeat;
+}
+@media (max-width: 63.9375em) {
+  footer::before {
+    width: 45%;
+    top: 170%;
+  }
 }
 @media (max-width: 39.9375em) {
   footer::before {
-    background-image: url("images/bg-pattern-footer-mobile.svg");
+    background-image: url(../../images/bg-pattern-footer-mobile.svg);
     background-repeat: no-repeat;
     width: 100%;
     top: 305%;

@@ -6,16 +6,21 @@ footer {
         content: ""; // ::before and ::after both require content
         position: absolute;
         bottom: 0;
-        top: 229%;
+        top: 232%;
         left: 0;
         width: 30%;
         height: 30%;
-        background-image: url(/images/bg-pattern-footer-desktop.svg);
+        background-image: url(../../images/bg-pattern-footer-desktop.svg);
         background-repeat: no-repeat;
         // 
 
+        @include breakpoint-down(medium){
+            width: 45%;
+            top: 170%;
+        }
+
         @include breakpoint-down(small){
-            background-image: url(/images/bg-pattern-footer-mobile.svg);
+            background-image: url(../../images/bg-pattern-footer-mobile.svg);
             background-repeat: no-repeat;
             width: 100%;
             top: 305%;

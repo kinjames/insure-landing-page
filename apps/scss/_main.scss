@@ -80,11 +80,19 @@ main {
             left: 58%;
             width: 30%;
             height: 30%;
-            background-image: url(/images/bg-pattern-how-we-work-desktop.svg);
+            background-image: url(../../images/bg-pattern-how-we-work-desktop.svg);
             background-repeat: no-repeat;
 
+            @include breakpoint-down(medium){
+                bottom: -62%;
+                left: 50%;
+                width: 50%;
+                height: 30%;
+            }
+
+
             @include breakpoint-down(small){
-                background-image: url(/images/bg-pattern-how-we-work-mobile.svg);
+                background-image: url(../../images/bg-pattern-how-we-work-mobile.svg);
                 height: 42%;
                 top: 250%;
                 bottom: 0;

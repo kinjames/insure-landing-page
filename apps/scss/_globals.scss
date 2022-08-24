@@ -169,6 +169,7 @@ a,a:visited,a:hover {
 
 .btn {
     border: 2px solid $darkGrayishViolet;
+    z-index: 30;
     height: 2.875rem;
     text-align: center;
     width: 9.25rem;
@@ -184,6 +185,6 @@ a,a:visited,a:hover {
 }
 
 .last {
-    z-index: 5;
+    z-index: 30;
     border: 1px solid $veryLightGray;
 }
