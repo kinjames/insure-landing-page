@@ -69,6 +69,10 @@ main {
         background-color: $darkViolet;
         margin-bottom: 6.875rem;
 
+        @include breakpoint-down(small){
+            width: 90%;
+        }
+
         &::before {
             content: ""; // ::before and ::after both require content
             position: absolute;
@@ -82,10 +86,10 @@ main {
             @include breakpoint-down(small){
                 background-image: url(/images/bg-pattern-how-we-work-mobile.svg);
                 height: 42%;
-                top: 248%;
+                top: 250%;
                 bottom: 0;
-                width: 50%;
-                left: 50%;
+                width: 48%;
+                left: 48%;
             }
         }
 

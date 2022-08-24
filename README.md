@@ -43,6 +43,7 @@ Users should be able to:
 - CSS custom properties
 - Scss
 - Flexbox
+- CSS Grid
 - JavaScript
 
 ### Layout
