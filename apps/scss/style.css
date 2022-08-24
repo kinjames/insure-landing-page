@@ -279,7 +279,7 @@ header section::before {
   header section::before {
     background-image: url(../../images/bg-pattern-intro-right-mobile.svg);
     height: 42%;
-    top: 105%;
+    top: 115%;
     bottom: 0;
     width: 35%;
     left: 65%;
@@ -305,7 +305,7 @@ header section::after {
     background-image: url(../../images/bg-pattern-intro-left-mobile.svg);
     background-repeat: no-repeat;
     width: 100%;
-    bottom: -6%;
+    bottom: -26%;
     height: 40%;
   }
 }
@@ -494,7 +494,7 @@ main .about::before {
   main .about::before {
     background-image: url(../../images/bg-pattern-how-we-work-mobile.svg);
     height: 42%;
-    top: 250%;
+    top: 300%;
     bottom: 0;
     width: 48%;
     left: 48%;
@@ -541,7 +541,7 @@ footer::before {
     background-image: url(../../images/bg-pattern-footer-mobile.svg);
     background-repeat: no-repeat;
     width: 100%;
-    top: 305%;
+    top: 335%;
   }
 }
 footer .logo-socials {

@@ -131,7 +131,7 @@ header {
             @include breakpoint-down(small){
                 background-image: url(../../images/bg-pattern-intro-right-mobile.svg);
                 height: 42%;
-                top: 105%;
+                top: 115%;
                 bottom: 0;
                 width: 35%;
                 left: 65%;
@@ -156,7 +156,7 @@ header {
                 background-image: url(../../images/bg-pattern-intro-left-mobile.svg);
                 background-repeat: no-repeat;
                 width: 100%;
-                bottom: -6%;
+                bottom: -26%;
                 height: 40%;
             }
         }
